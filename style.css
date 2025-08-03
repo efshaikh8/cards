@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Agar multiple cards hain toh ye line unko wrap kar degi */
+    min-height: 100vh; /* Vertical centering ke liye */
+}
+.card{
+    background-color: #f9f9f9;
+    /* border: 1px solid #ddd; */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgb(196, 196, 196);
+    width: 300px;
+    text-align: center;
+    display: inline-block;
+    margin: top 30px; ;
+    margin: 10px ;
+}
+h1{
+    text-align: center;
+    font-family: "Bitcount", system-ui;
+    font-weight: 300;
+    background-color: #216e27;
+    color: white;
+    padding: 10px;
+}
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+    transition: all 0.3s ease-in-out;
+}
+.card button {
+    background-color: #216e27;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Vertical alignment */
+    margin-top: 20px; /* Spacing from the top */
+    background-color: #215f26;
+}
+
+.main img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
